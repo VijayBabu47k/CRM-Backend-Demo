@@ -5,7 +5,7 @@ const createTables = async () => {
   const client = await pool.connect();
   
   try {
-    console.log('🔄 Starting database migration...');
+    console.log('Starting database migration...');
     
     await client.query('BEGIN');
     
